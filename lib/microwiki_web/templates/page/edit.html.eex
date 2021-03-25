@@ -1,0 +1,16 @@
+<div class='text_form'>
+  <form name='text_form' method='POST'>
+    <input type="hidden" value="<%= @token %>" name="_csrf_token"/>
+    <div class='form_row'>
+      <label>Title</label>
+      <input type='text' name='title' value="<%= @page.title %>">
+    </div>
+    <div class='form_row'>
+      <label>Content</label>
+      <textarea name='text'><%= @page.text %></textarea>
+    </div>
+    <div class='form_row'>
+      <button>Сохранить</button>
+    </div>  
+  </form>
+</div>

@@ -1,0 +1,6 @@
+<div class='page_show new_page'>
+  <h1>404 Страница не найдена</h1>
+  <div>
+    <p>Этой странице ещё нет на сайте, но вы можете её <a href="<%= Routes.page_path(@conn, :edit, @name) %>">создать</a>.</p>
+  </div>
+</div>
